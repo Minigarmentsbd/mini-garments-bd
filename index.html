@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Garments BD</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: #080808;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b89545;
+}
+
+.logo {
+  color: #d6b45b;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  padding: 85px 7%;
+  text-align: center;
+  background: linear-gradient(135deg,#171717,#302713);
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #e0bd65;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background: #c5a34e;
+  color: #111;
+  padding: 13px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 55px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  color: #d8b75e;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.product {
+  background: #202020;
+  border: 1px solid #66552e;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.product h3 {
+  margin: 15px 0;
+}
+
+.price {
+  color: #e2bd60;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #080808;
+  padding: 30px;
+  text-align: center;
+  color: #d6b45b;
+}
+
+@media(max-width:650px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .product img {
+    height: 160px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MINI GARMENTS BD</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Style That Defines You</h1>
+  <p>Discover Your Perfect Fashion Collection</p>
+  <a href="#products" class="btn">Explore Collection</a>
+</section>
+
+<section class="section" id="products">
+  <h2>Our Latest Collection</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://placehold.co/400x400/222222/d6b45b?text=Premium+Shirt" alt="Premium Shirt">
+      <h3>Premium Shirt</h3>
+      <p class="price">৳ 850</p>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://placehold.co/400x400/222222/d6b45b?text=Casual+Shirt" alt="Casual Shirt">
+      <h3>Casual Shirt</h3>
+      <p class="price">৳ 750</p>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://placehold.co/400x400/222222/d6b45b?text=Fashion+Wear" alt="Fashion Wear">
+      <h3>Fashion Wear</h3>
+      <p class="price">৳ 950</p>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>MINI GARMENTS BD</h2>
+  <p>Contact Us For Your Favourite Collection</p>
+  <p>© 2026 Mini Garments BD</p>
+</footer>
+
+</body>
+</html>
