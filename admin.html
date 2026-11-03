@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Garments BD - Admin</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#111;color:white}
+header{background:#202020;padding:22px;color:#d6b45b}
+.container{padding:20px}
+h2{color:#d6b45b}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.card{background:#222;padding:22px;border:1px solid #8b7545;border-radius:12px}
+.card h3{color:#d6b45b}
+.card p{font-size:25px;font-weight:bold}
+button{background:#c9a64e;border:0;padding:13px;border-radius:7px;font-weight:bold}
+@media(max-width:400px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h2>MINI GARMENTS BD</h2>
+<p>Admin Dashboard</p>
+</header>
+<div class="container">
+<h2>Dashboard Overview</h2>
+<div class="cards">
+<div class="card"><h3>Total Products</h3><p>0</p></div>
+<div class="card"><h3>Total Orders</h3><p>0</p></div>
+<div class="card"><h3>Total Sales</h3><p>৳0</p></div>
+<div class="card"><h3>Customers</h3><p>0</p></div>
+</div>
+<h2>Management</h2>
+<button>Manage Products</button>
+<button>Manage Orders</button>
+</div>
+</body>
+</html>
